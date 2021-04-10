@@ -41,3 +41,14 @@ CanvasRenderingContext2D.prototype.strokeLabelledLine = function (x1, y1, x2, y2
   ctx.restore()
 }
 
+CanvasRenderingContext2D.prototype.strokeLabelledCircle = function (x, y, radius, label) {
+  this.strokeCircle(x, y, radius)
+
+  this.save()
+
+  this.textAlign = 'center'
+  this.textBaseline = 'middle'
+  this.strokeText(label, x, y)
+
+  this.restore()
+}

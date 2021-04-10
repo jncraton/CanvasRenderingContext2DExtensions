@@ -23,6 +23,18 @@ CanvasRenderingContext2D.prototype.strokeLine = function (x1, y1, x2, y2) {
   this.stroke()
 }
 
+CanvasRenderingContext2D.prototype.fillLabelledPoint = function (x, y, label, size=2) {
+  this.fillPoint(x, y, size)
+
+  this.save()
+
+  this.textAlign = 'center'
+  this.textBaseline = 'bottom'
+  this.strokeText(label, x, y-size/2-3)
+
+  this.restore()
+}
+
 CanvasRenderingContext2D.prototype.strokeLabelledLine = function (x1, y1, x2, y2, label) {
   const xmin = Math.min(x1, x2)
   const ymin = Math.min(y1, y2)

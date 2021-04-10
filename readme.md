@@ -6,7 +6,13 @@ This packages extends the default CanvasRenderingContext2D object prototype to i
 Methods
 -------
 
-- fillCircle(x, y, radius)
-- strokeCircle(x, y, radius)
-- point(x, y, size=2)
-- strokeLine(x1, y1, x2, y2)
+```js
+fillPoint(x, y, size=2)
+fillCircle(x, y, radius)
+strokeCircle(x, y, radius)
+strokeLine(x1, y1, x2, y2)
+fillLabelledPoint(x, y, label, size=2)
+fillLabelledRect(x, y, width, height, label)
+strokeLabelledCircle(x, y, radius, label)
+strokeLabelledLine(x1, y1, x2, y2, label)
+```

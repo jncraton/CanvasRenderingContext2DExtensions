@@ -16,3 +16,5 @@ strokeLabelledRect(x, y, width, height, label)
 strokeLabelledCircle(x, y, radius, label)
 strokeLabelledLine(x1, y1, x2, y2, label)
 ```
+
+Check out the [demo](demo.html) for usage examples.

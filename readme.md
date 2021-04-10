@@ -12,7 +12,7 @@ fillCircle(x, y, radius)
 strokeCircle(x, y, radius)
 strokeLine(x1, y1, x2, y2)
 fillLabelledPoint(x, y, label, size=2)
-fillLabelledRect(x, y, width, height, label)
+strokeLabelledRect(x, y, width, height, label)
 strokeLabelledCircle(x, y, radius, label)
 strokeLabelledLine(x1, y1, x2, y2, label)
 ```

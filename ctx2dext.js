@@ -45,6 +45,7 @@ CanvasRenderingContext2D.prototype.strokeLabelledLine = function (x1, y1, x2, y2
 
   this.strokeLine(x1, y1, x2, y2)
   this.textAlign = 'center'
+  this.textBaseline = 'bottom'
   this.measureText(label)
   this.translate(xmin + (xmax - xmin)/2, ymin + (ymax - ymin)/2)
   this.rotate(Math.atan((ymax - ymin) / (xmax - xmin)))

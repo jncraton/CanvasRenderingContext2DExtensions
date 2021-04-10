@@ -12,7 +12,7 @@ CanvasRenderingContext2D.prototype.fillCircle = function (x, y, radius) {
   this.fill()
 }
 
-CanvasRenderingContext2D.prototype.point = function (x, y, size=2) {
+CanvasRenderingContext2D.prototype.fillPoint = function (x, y, size=2) {
   this.fillRect(x - size/2, y-size/2, size, size)
 }
 

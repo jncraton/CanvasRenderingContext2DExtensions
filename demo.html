@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <style></style>
+  </head>
+
+  <body>
+    <canvas></canvas>
+    <script src=ctx2dext.js></script>
+    <script>
+    const ctx = document.querySelector('canvas').getContext('2d')
+    ctx.point(10, 10)
+    ctx.strokeCircle(50,50,15)
+    ctx.fillCircle(100,100,10)
+    </script>
+  </body>
+</html>

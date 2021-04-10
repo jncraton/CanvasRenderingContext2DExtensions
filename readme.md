@@ -9,3 +9,4 @@ Methods
 - fillCircle(x, y, radius)
 - strokeCircle(x, y, radius)
 - point(x, y, size=2)
+- strokeLine(x1, y1, x2, y2)

@@ -30,7 +30,7 @@ CanvasRenderingContext2D.prototype.fillLabelledPoint = function (x, y, label, si
 
   this.textAlign = 'center'
   this.textBaseline = 'bottom'
-  this.strokeText(label, x, y-size/2-3)
+  this.fillText(label, x, y-size/2-3)
 
   this.restore()
 }
@@ -49,7 +49,7 @@ CanvasRenderingContext2D.prototype.strokeLabelledLine = function (x1, y1, x2, y2
   this.measureText(label)
   this.translate(xmin + (xmax - xmin)/2, ymin + (ymax - ymin)/2)
   this.rotate(Math.atan((ymax - ymin) / (xmax - xmin)))
-  this.strokeText(label, 0, -3*ctx.lineWidth)
+  this.fillText(label, 0, -3*ctx.lineWidth)
 
   this.restore()
 }
@@ -61,7 +61,7 @@ CanvasRenderingContext2D.prototype.strokeLabelledCircle = function (x, y, radius
 
   this.textAlign = 'center'
   this.textBaseline = 'middle'
-  this.strokeText(label, x, y)
+  this.fillText(label, x, y)
 
   this.restore()
 }
@@ -73,7 +73,7 @@ CanvasRenderingContext2D.prototype.strokeLabelledRect = function (x, y, width, h
 
   this.textAlign = 'center'
   this.textBaseline = 'middle'
-  this.strokeText(label, x + width/2, y + height/2)
+  this.fillText(label, x + width/2, y + height/2)
 
   this.restore()
 }

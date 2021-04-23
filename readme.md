@@ -3,6 +3,8 @@ CanvasRenderingContext2DExtensions
 
 This packages extends the default CanvasRenderingContext2D object prototype to include a number of new properties to improve the ergonomics of drawing directly to a canvas. It aims to match the style of the existing API while simplifying certain operations.
 
+![Demo](media/demo.png)
+
 Methods
 -------
 
